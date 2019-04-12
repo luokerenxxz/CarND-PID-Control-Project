@@ -32,6 +32,11 @@ class PID {
   double TotalError();
 
  private:
+  //previous cte
+  double cte_prev;
+  //sum of the previous
+  double cte_sum;
+
   /**
    * PID Errors
    */
